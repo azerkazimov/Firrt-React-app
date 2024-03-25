@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom"; // Import BrowserRouter, Link, Routes, and Route
+import { Link, Routes, Route } from "react-router-dom"; // Import BrowserRouter, Link, Routes, and Route
 import UserAvatar from "./UserAva";
 import About from "./About";
 import Contact from "./Contact";
@@ -8,7 +8,7 @@ import Main from "./Main";
 const Header = ({ user }) => {
   return (
     <header className="header">
-      <BrowserRouter>
+      <>
         <ul className="header__list">
           <li className="header__item">
             <Link to="/">Home</Link>
@@ -25,7 +25,7 @@ const Header = ({ user }) => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </>
 
       <UserAvatar user={user} />
     </header>

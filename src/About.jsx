@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Link, Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import { GreetMe } from "./Greet";
 import Select from "./Page";
 import MailBox from "./MailBox";
@@ -20,10 +20,10 @@ export default function About() {
       <Link to="/contact">To Contact</Link>
       <ul className="header__list">
         <li className="header__item">
-          <Link to={`/about/event`}>Event</Link>
+          <Link to="/about/event">Event</Link>
         </li>
         <li className="header__item">
-          <Link to={`/about/public`}>Public</Link>
+          <Link to="/about/public">Public</Link>
         </li>
       </ul>
     
