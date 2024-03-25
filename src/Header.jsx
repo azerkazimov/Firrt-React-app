@@ -1,5 +1,6 @@
 import React from "react";
 // import { BrowserRouter, Link, Routes, Route } from "react-router-dom"; // Import BrowserRouter, Link, Routes, and Route
+import { Link, Routes, Route } from "react-router-dom"; // Import BrowserRouter, Link, Routes, and Route
 import UserAvatar from "./UserAva";
 import { Link } from "react-router-dom";
 // import About from "./About";
@@ -21,6 +22,19 @@ const Header = ({ user }) => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      <>
+        <ul className="header__list">
+          <li className="header__item">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="header__item">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="header__item">
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </>
 
       <UserAvatar user={user} />
     </header>

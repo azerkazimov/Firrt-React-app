@@ -1,5 +1,5 @@
 import React from "react";
-import { UserGit } from "./User";
+import { UserGit } from "./UserGit";
 import Button from "./Button";
 import Score from "./Score";
 import Color from "./Color";
