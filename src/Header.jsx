@@ -11,7 +11,7 @@ const Header = ({ user }) => {
       <BrowserRouter>
         <ul className="header__list">
           <li className="header__item">
-            <Link to="/main">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="header__item">
             <Link to="/about">About</Link>
@@ -21,7 +21,7 @@ const Header = ({ user }) => {
           </li>
         </ul>
         <Routes>
-          <Route exact path="/main" element={<Main user={user}/>}/>
+          <Route exact path="/" element={<Main user={user}/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Link, Routes, Route } from "react-router-dom";
 import { GreetMe } from "./Greet";
 import Select from "./Page";
 import MailBox from "./MailBox";
-import { Update } from "./App";
+import { Update } from "./Update";
 import { Dimention } from "./Dimention";
+import Product from "./Product";
 
 export default function About() {
   return (
@@ -17,14 +18,25 @@ export default function About() {
         sunt?
       </p>
       <Link to="/contact">To Contact</Link>
+      <ul className="header__list">
+        <li className="header__item">
+          <Link to={`/about/event`}>Event</Link>
+        </li>
+        <li className="header__item">
+          <Link to={`/about/public`}>Public</Link>
+        </li>
+      </ul>
+
+      <Routes>
+        <Route path="/about/:product" element={<Product />} />
+      </Routes>
 
       <GreetMe name="Azer" tech="React" />
       <MailBox messages={["hi", "how are you"]} />
       <Dimention />
 
       <Select />
-    <Update />
-
+      <Update />
     </div>
   );
 }

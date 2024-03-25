@@ -7,7 +7,10 @@ import UserList from "./UserList";
 import { users } from "./userr";
 import Demo from "./Demo";
 import Search from "./Search";
-import { CounterApp, ClockApp, PopUp } from "./App";
+import { PopUp } from "./PopUp";
+import { CounterApp } from "./CounterApp";
+import { ClockApp } from "./ClockApp";
+
 
 
 const Main = (user) => {
