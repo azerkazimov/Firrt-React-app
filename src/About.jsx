@@ -26,10 +26,11 @@ export default function About() {
           <Link to={`/about/public`}>Public</Link>
         </li>
       </ul>
-
+    
       <Routes>
         <Route path="/about/:product" element={<Product />} />
       </Routes>
+
 
       <GreetMe name="Azer" tech="React" />
       <MailBox messages={["hi", "how are you"]} />
